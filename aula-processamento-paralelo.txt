@@ -1,0 +1,31 @@
+Sequencial
+
+Fluxo de execução → thread
+
+Garbage colector → processa em paralelo durante a execução do programa
+
+paralelo: não compartilham a mesma memória
+
+processamento concorrente: disputam pelos recursos do sistema(memória compartilhada)
+
+API - Thread
+
+************************************************************************
+
+Obter nome da thread
+Thread.currentThread().getName() → método estatico, obtem o nome da thread que esta sendo executada
+
+Thread.run() → Bloco de código que contem o que será executado em paralelo
+
+Thread.start() → Criar um novo fluxo de execução, paralelismo
+
+
+Quando herdar da API thread?
+
+
+Interface Runnable
+    Melhor forma de instanciar threads
+    Necessidade de criar a classe Thread ainda existe
+
+
+JOIN→ As threads esperam a thread principal acabar para iniciar
